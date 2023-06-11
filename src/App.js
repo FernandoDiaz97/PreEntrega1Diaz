@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/NavBar/Navbar";
+import Itemlistcontainer from "./components/ItemListContainer/itemListContainer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App (){
+    
+    
+    return(
+        <div className="body" style={{backgroundColor:"crimson", borderRadius:"10px"}}>
+        <Navbar></Navbar>
+
+        <Itemlistcontainer greeting={'Bienvenidos a la tentación del Gaming'}></Itemlistcontainer>
+
+        </div>
+    )
 }
 
 export default App;
